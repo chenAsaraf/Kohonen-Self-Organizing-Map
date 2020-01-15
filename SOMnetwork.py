@@ -57,8 +57,15 @@ def choose_uniform():
   return np.random.uniform(low=0.0, high=1.0, size=2)
 
 # Q2
-def choose_non_uniform():
-    return np.random.random(size=2)
+# Returns a number between smallest and largest
+# Higher probability of being chosen the closer you are to smallest
+def choose_non_uniform(smallest, largest, power):
+    # np.random.random(size=2)
+    bias = pow(random.random(), power)
+    x = smallest + (largest - smallest) * bias
+    bias = pow(random.random(), power)
+    y = smallest + (largest - smallest) * bias
+    return np.array([x, y])
 
 # Q3
 def choose_diagonal():
@@ -95,7 +102,10 @@ def kohonen(question):
            data_point = choose_uniform()
         # Case 1 data:
         if question == 2 :
-            data_point = choose_non_uniform()
+            coin = random.random()
+            if coin > 0.5:
+                data_point = choose_non_uniform(0.5, 1, 2)
+            else : data_point = choose_non_uniform(0.5, 0, 2)
         if question == 3 :
             data_point = choose_diagonal()
         # Case 4 data:

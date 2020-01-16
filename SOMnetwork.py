@@ -4,21 +4,22 @@ import random
 
 # Basic parameters initialization:
 # number of neurons in the pattern. in Question 1 case: a line with 100 neurons.
-pattern_length = 10
+pattern_length = 100
 # Time: increase with every new data point.
-number_iteration = 100
+number_iteration = 1000
 # After some time learning rate will converge to zero.
-max_time_learning_rate_update = 50
+max_time_learning_rate_update = 200
 time_constant = int(0.1 * number_iteration)
 # learning rate initial values:
 alpha_0 = 1.0
 alpha_infinte = 0.05
 # initial radius:
-init_rad = 5
+init_rad = 60
 
+
+# W is an array represent the neurons by they weights.
+# each neuron has 2 coordinate
 def initialize():
-    # W is an array represent the neurons by they weights.
-    # each neuron has 2 coordinate
     W = np.random.normal(0.5, 1, size=(pattern_length,2))
     return W
 
@@ -28,7 +29,7 @@ def winning_neuron(W, data_point):
     return winning_unit
 
 # This learning rate indicates how much we want to adjust our weights.
-# After time max_time_learning_rate_update (positive infinite), this learning rate will converge to zero
+# After time max_time_learning_rate_update, this learning rate will converge to zero
 # so we will have no update even for the neuron winner .
 def learning_rate(time):
     new_learning_rate = alpha_0 * np.exp(-float(time)/ time_constant)
@@ -45,36 +46,36 @@ def euclidean_dist(W, point):
     return dst
 
 # Updating weights:
-# delta weights = current learning rate * neighborhood parameter * actual distance from data point
+# delta weights = current learning rate * actual distance from data point
 def update_location(W, data_point, winning_idx, radius, alpha):
     # ed = euclidean_dist(W, data_point)
     for node_idx in range(W.shape[0]):
         if abs(winning_idx-node_idx) < radius:
             W[node_idx] += alpha * (data_point - W[node_idx])
     return W
-# Q1
+
+# Case 1
 def choose_uniform():
   return np.random.uniform(low=0.0, high=1.0, size=2)
 
-# Q2
+# Case 2
 # Returns a number between smallest and largest
 # Higher probability of being chosen the closer you are to smallest
 def choose_non_uniform(smallest, largest, power):
-    # np.random.random(size=2)
     bias = pow(random.random(), power)
     x = smallest + (largest - smallest) * bias
     bias = pow(random.random(), power)
     y = smallest + (largest - smallest) * bias
     return np.array([x, y])
 
-# Q3
+# Case 3
 def choose_diagonal():
-    x = np.random.uniform(0.0, 1.0)
+    x = np.random.uniform(0.0, 1.0, size = 1)
     y = x
     point = np.concatenate([x, y])
     return point
 
-# Q4
+# Case 4
 def generate_circle_point(start_range, end_range):
   ang = np.random.uniform(low = 0.5, high = 3*np.pi, size = 1)
   r = np.random.uniform(low = start_range, high = end_range, size =1)
@@ -97,18 +98,19 @@ def kohonen(question):
             current_learning_rate = 0.2
             current_radius = 1.0
 
-        # Case 1 data:
+        # --- Case 1: data chosen randomly and uniformly --- #
         if question == 1 :
            data_point = choose_uniform()
-        # Case 1 data:
+        # --- Case 2: data chosen non-uniformly --- #
         if question == 2 :
             coin = random.random()
             if coin > 0.5:
                 data_point = choose_non_uniform(0.5, 1, 2)
             else : data_point = choose_non_uniform(0.5, 0, 2)
+        # --- Case 3: data are all given uniformly but restricted to a diagonal --- #
         if question == 3 :
             data_point = choose_diagonal()
-        # Case 4 data:
+        # --- Case 4: data set is chosen uniformly but in the band between two concentric circles --- #
         if question == 4 :
             data_point = generate_circle_point(1.0, 2.0)
 
@@ -127,7 +129,7 @@ def kohonen(question):
             ax.set(xlabel='wieght 1',
                     ylabel='wieght 2',
                     title='Kohonen algorithm (Iter: {}, Radius: {:.3f}, L_rate:{:.3f})'
-                    .format(time, current_radius, current_learning_rate))
+                    .format(time+1, current_radius, current_learning_rate))
             if question == 4:
                 inner_circle = plt.Circle((0.5, 0.5), 1, ec="red", fill=False)
                 outer_circle = plt.Circle((0.5, 0.5), 2, ec="red", fill=False)
@@ -153,5 +155,5 @@ def kohonen(question):
 
 
 
-kohonen(2)
+kohonen(4)
 

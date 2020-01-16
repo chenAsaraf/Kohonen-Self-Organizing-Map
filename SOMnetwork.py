@@ -48,7 +48,6 @@ def euclidean_dist(W, point):
 # Updating weights:
 # delta weights = current learning rate * actual distance from data point
 def update_location(W, data_point, winning_idx, radius, alpha):
-    # ed = euclidean_dist(W, data_point)
     for node_idx in range(W.shape[0]):
         if abs(winning_idx-node_idx) < radius:
             W[node_idx] += alpha * (data_point - W[node_idx])
@@ -64,8 +63,7 @@ def choose_uniform():
 def choose_non_uniform(smallest, largest, power):
     bias = pow(random.random(), power)
     x = smallest + (largest - smallest) * bias
-    bias = pow(random.random(), power)
-    y = smallest + (largest - smallest) * bias
+    y = random.random()
     return np.array([x, y])
 
 # Case 3
@@ -155,5 +153,5 @@ def kohonen(question):
 
 
 
-kohonen(4)
+kohonen(2)
 

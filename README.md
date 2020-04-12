@@ -23,6 +23,7 @@ Updating number of neurons to 100 increase the accuracy:
 <p align="center">
   <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/case1.2.png>
 </p>
+
 <p align="center">
   <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/graph.1.2.png>
 </p>
@@ -33,6 +34,7 @@ With a significant increase in the number of iterations:
 <p align="center">
   <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/case1.3.png>
 </p>
+
 <p align="center">
   <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/graph.1.3.png>
 </p>
@@ -42,11 +44,24 @@ With a significant increase in the number of iterations:
 Data set is chosen uniformly but in the band between two concentric circles (i.e. share the same center); one of radius 1 and one of radius 2.
 
 If we select:
+
 <p align="center">
-  <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/case1.3.png>
-  
+  <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/case4.1.png>
 </p>
+
 <p align="center">
-  <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/case4.101itr.jpg>
+  <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/graph4.101itr.jpg>
+</p>
+
+Finally after 100 iterations you can see that the line drawn between the neurons is almost entirely between the two rings, and is adjusted according to the data points.
+
+Once again, we increased the number of iterations to 1000.  This time we also increased the initial radius. You can see that a zigzag line is created that tries to "grab" as many data points as possible.
+
+<p align="center">
+  <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/case4.1000itr.png>
+</p>
+
+<p align="center">
+  <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/graph4.1000itr.jpg>
 </p>
 

@@ -1,7 +1,7 @@
 # Kohonen-Self-Organizing-Map
 ## 1-Dimensional topography of self-organizing map
 ###### Basic implementation in Python
-This is a simple implementation of unsupervised network for clustering, according to Kohonen algorithm (SOM). Network's topography is a line.
+This is a simple implementation of unsupervised network for clustering, according to Kohonen algorithm (SOM). Network's topography is a line. \
 *Made during Neurocomputational Cognitive Modeling Course, Ariel University.*
 
 There are several options for data type that can be given - points that are distributed in a uniform and uneven distribution, around a certain point or in a range restriction.
@@ -13,8 +13,8 @@ When we selected more neurons (100), the line between the data points was more a
   <b>Running with 10 neurons and the next data give the next result:</b><br>
   <br><br>
   <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/case1.1.png>
-  <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/graph.1.1.png.
-\\
+  <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/graph.1.1.png>
+\
   <b>Updating number of neurons to 100 increase the accuracy::</b><br>
   <br><br>
   <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/case1.2.png>

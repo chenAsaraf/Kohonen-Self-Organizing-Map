@@ -9,20 +9,17 @@ There are several options for data type that can be given - points that are dist
 - **Case number 1: **
 Fit a line of neurons in a square. That is, the topology of the Kohonen level is a line. Assume the data is two dimensional (on a plane) where the points are given by (x, y) with 0<= x<=1, 0<=y<=1; and the data chosen randomly and uniformly.
 When we selected more neurons (100), the line between the data points was more accurate, and the line "occupied" more space between the data points. That means there were more matches between data and the clusters.
-
-Running with 10 neurons and the next data give the next result:
-![case1.1data](https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/case1.1.png)
-![case1.1graph](https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/graph.1.1.png)
-
 <p align="center">
+  <b>Running with 10 neurons and the next data give the next result:</b><br>
+  <br><br>
+  <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/case1.1.png>
+  <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/graph.1.1.png.
+
   <b>Updating number of neurons to 100 increase the accuracy::</b><br>
   <br><br>
   <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/case1.2.png>
+  <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/graph.1.2.png>
 </p>
-
-![case1.2data](https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/case1.2.png)
-
-![case1.2graph](https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/graph.1.2.png)
 
 With a significant increase in the number of iterations:
 

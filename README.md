@@ -22,12 +22,22 @@ When we selected more neurons (100), the line between the data points was more a
   <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/case1.2.png>
   <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/graph.1.2.png>
 </p>
+\
+<p align="center">
+  <b>With a significant increase in the number of iterations:</b><br>
+  <br><br>
+  <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/case1.3.png>
+  <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/graph.1.3.png>
+</p>
+\
 
-With a significant increase in the number of iterations:
-
-![case1.3data](https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/case1.3.png)
-
-![case1.3graph](https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/graph.1.3.png)
-
-
-
+- **Case number 4:**
+Data set is chosen uniformly but in the band between two concentric circles (i.e. share the same center); one of radius 1 and one of radius 2.
+\
+<p align="center">
+  <b>If we select:</b><br>
+  <br><br>
+  <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/case1.3.png>
+  <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/graph.1.3.png>
+</p>
+\

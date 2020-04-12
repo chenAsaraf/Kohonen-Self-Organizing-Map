@@ -14,7 +14,9 @@ When we selected more neurons (100), the line between the data points was more a
   <br><br>
   <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/case1.1.png>
   <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/graph.1.1.png>
+</p>
 \
+<p align="center">
   <b>Updating number of neurons to 100 increase the accuracy::</b><br>
   <br><br>
   <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/case1.2.png>

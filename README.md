@@ -53,7 +53,7 @@ If we select:
   <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/graph4.101itr.jpg>
 </p>
 
-Finally after 100 iterations you can see that the line drawn between the neurons is almost entirely between the two rings, and is adjusted according to the data points.
+After 100 iterations you can see that the line drawn between the neurons is almost entirely between the two rings, and is adjusted according to the data points.
 
 Once again, we increased the number of iterations to 1000.  This time we also increased the initial radius. You can see that a zigzag line is created that tries to "grab" as many data points as possible.
 
@@ -65,3 +65,8 @@ Once again, we increased the number of iterations to 1000.  This time we also in
   <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/graph4.1000itr.jpg>
 </p>
 
+Finally after 1,500 iteration:
+
+<p align="center">
+  <img src=https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/graph4.1500itr.jpg>
+</p>

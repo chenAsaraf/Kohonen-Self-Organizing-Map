@@ -18,13 +18,13 @@ Updating number of neurons to 100 increase the accuracy:
 
 ![case1.2data](https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/case1.2.png){:height="50%" width="50%"}
 
-![case1.2graph](https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/graph1.2.png){:height="50%" width="50%"}
+![case1.2graph](https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/graph.1.2.png){:height="50%" width="50%"}
 
 With a significant increase in the number of iterations:
 
 ![case1.3data](https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/case1.3.png){:height="50%" width="50%"}
 
-![case1.3graph](https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/graph.3.png){:height="50%" width="50%"}
+![case1.3graph](https://github.com/chenAsaraf/Kohonen-Self-Organizing-Map/blob/master/PIC/graph.1.3.png){:height="50%" width="50%"}
 
 
 
